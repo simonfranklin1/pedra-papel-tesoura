@@ -1,0 +1,154 @@
+.game_step2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.game_playing-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.game_playing-container_player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    padding: .5rem;
+    gap: 4rem;
+}
+
+.game_playing-container_player p {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.game_playing-container .game_selection-container_button {
+    position: inherit;
+    scale: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.waiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    scale: 1.5;
+    border-radius: 50%;
+}
+
+.waiting-icon {
+    scale: 1.5;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+    }
+}
+
+.game_result-container-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game_result-container-mobile {
+    display: none;
+}
+
+.game_result h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.game_restart-btn {
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: hsl(229, 25%, 31%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.game_restart-btn:hover {
+    scale: 1.05;
+}
+
+.opacity_0 {
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {  
+    
+    .game_playing-container {
+        width: 100%;
+    }
+
+    .game_playing-container .game_selection-container_button {
+        scale: 1;
+    }
+
+    .game_result-container-desktop {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .game_playing-container_player {
+        flex-direction: column-reverse;
+    } 
+
+    .game_result-container-desktop {
+        display: none;
+    }
+
+    .game_result-container-mobile {
+        display: block;
+        margin-top: 3rem;
+    }  
+}
+
+@media screen and (max-width: 375px) {
+    .game_playing-container .game_selection-container_button {
+        scale: 1;
+    }
+
+    .game_playing-container_player p {
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .game_result-container-mobile {
+        display: block;
+    }
+}

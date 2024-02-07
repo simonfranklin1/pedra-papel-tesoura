@@ -1,0 +1,59 @@
+.game_selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 290px;
+    background: url('../../assets/bg-triangle.svg');
+    background-size: cover;
+    position: relative;
+}
+
+.game_selection-container_upper-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game_selection-container_lower-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.game_selection-container_button {
+    position: absolute;
+    border: 1rem solid;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.game_selection-container_button img {
+    pointer-events: none;
+}
+
+.game_selection-container_button:hover {
+    scale: 1.05;
+}
+
+.rock_btn {
+    bottom: -10%;
+    border-color: hsl(349, 71%, 52%);
+}
+
+.paper_btn {
+    top: -10%;
+    left: -10%;
+    border-color: hsl(230, 89%, 62%);
+}
+
+.scissors_btn {
+    top: -10%;
+    right: -10%;
+    border-color: hsl(39, 89%, 49%);
+}
