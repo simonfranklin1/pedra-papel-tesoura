@@ -16,5 +16,5 @@
 
 ## Links
 
-- Autor:
-- Site no ar: 
+- Autor: [Simon Franklin](https://github.com/simonfranklin1)
+- Site no ar: [pedra-papel-tesoura](https://pedra-papel-tesoura-rosy.vercel.app/)
